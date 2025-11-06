@@ -15,6 +15,7 @@ async function searchCharacter(){
         resultDiv.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
         resultDiv.innerHTML = `<p>캐릭터 이름: ${data.character_name} </p>`;
     }
+        
     catch(error){
         resultDiv.innerText="에러가 발생하였습니다."
         console.error(error)
