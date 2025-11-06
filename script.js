@@ -12,6 +12,7 @@ async function searchCharacter(){
     
         const data = await response.json();
         console.log("API 응답 데이터:", data);
+        resultDiv.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
         resultDiv.innerHTML = `<p>캐릭터 이름: ${data.character_name} </p>`;
     }
     catch(error){
