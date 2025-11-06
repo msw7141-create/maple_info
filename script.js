@@ -12,6 +12,7 @@ async function searchCharacter(){
     
         const data = await response.json();
         resultDiv.innerHTML = `<p>캐릭터 이름: ${data.character_name} </p>`;
+        console.log(data);
     }
     catch(error){
         resultDiv.innerText="에러가 발생하였습니다."
