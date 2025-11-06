@@ -6,7 +6,7 @@ async function searchCharacter(){
     resultDiv.innerText =nickname+"검색중..."
 
     try {
-        const response= await fetch("https://cors-anywhere.herokuapp.com/https://open.api.nexon.com/maplestory/v1/id?nickname=${nickname}",{headers :{
+        const response= await fetch("https://cors-anywhere.herokuapp.com/https://open.api.nexon.com/maplestory/v1/id",{headers :{
              "x-nxopen-api-key": "test_fd8eed0087767b0ff3fee45805afa966e3ac740204edfea96c222a3f9a392e79efe8d04e6d233bd35cf2fabdeb93fb0d"
         }})
     
