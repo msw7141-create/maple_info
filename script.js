@@ -11,7 +11,7 @@ async function searchCharacter(){
         }})
     
         const data = await response.json();
-        resultDiv.innerHTML = `<p>캐릭터 이름: ${data.character_name} </p>`;
+        resultDiv.innerHTML = `<p>캐릭터 이름: ${data.ocid} </p>`;
     }
         
     catch(error){
