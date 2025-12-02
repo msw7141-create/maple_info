@@ -1,3 +1,4 @@
+const API_KEY = "test_fd8eed0087767b0ff3fee45805afa966e3ac740204edfea96c222a3f9a392e79efe8d04e6d233bd35cf2fabdeb93fb0d"
 
 async function searchCharacter(){
     const nickname= document.getElementById("nickname").value;
@@ -7,7 +8,7 @@ async function searchCharacter(){
 
     try {
         const response= await fetch("https://open.api.nexon.com/maplestory/v1/id?character_name="+nickname,{headers :{
-             "x-nxopen-api-key": "test_fd8eed0087767b0ff3fee45805afa966e3ac740204edfea96c222a3f9a392e79efe8d04e6d233bd35cf2fabdeb93fb0d"
+             "x-nxopen-api-key": API_KEY
         }})
     
         const data = await response.json();
